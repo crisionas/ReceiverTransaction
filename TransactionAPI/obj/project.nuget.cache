@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pRmTPAyuzj/DYzo1N2b0ba1Nf4LZMpCwV9IDtw+9s5VpHrIAD4SnnIDdouEDHO4lR0W6NXy6uWdFchIO2JMRvw==",
+  "success": true,
+  "projectFilePath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\TransactionAPI\\TransactionAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Artyrik\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

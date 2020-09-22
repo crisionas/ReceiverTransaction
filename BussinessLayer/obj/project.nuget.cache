@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L/oB2+xWJE3kdYVDEzpBEca7EvLdYl3PpjM5hd/GjDdj46+GqfeDOzwwL6gUmn0mM5YvoVJdeNwlbikZX2xdfQ==",
+  "dgSpecHash": "wwzYlfpZgeEEqrxQr0LyeA1aU1Nv9qKS5iV3qkToFsiG7KZWExiOjJqbWejFd/eYXF3+FK4nnImrYQOCQJqKLw==",
   "success": true,
-  "projectFilePath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj",
+  "projectFilePath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Artyrik\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

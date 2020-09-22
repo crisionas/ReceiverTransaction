@@ -7,3 +7,12 @@ D:\Visual Projects\UTM\SI\Lab1\Receiver\BussinessLayer\obj\Debug\netcoreapp3.1\B
 D:\Visual Projects\UTM\SI\Lab1\Receiver\BussinessLayer\bin\Debug\netcoreapp3.1\BussinessLayer.pdb
 D:\Visual Projects\UTM\SI\Lab1\Receiver\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.dll
 D:\Visual Projects\UTM\SI\Lab1\Receiver\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.pdb
+D:\Visual Projects\UTM\PAD\Lab1\Receiver\BussinessLayer\bin\Debug\netcoreapp3.1\BussinessLayer.deps.json
+D:\Visual Projects\UTM\PAD\Lab1\Receiver\BussinessLayer\bin\Debug\netcoreapp3.1\BussinessLayer.dll
+D:\Visual Projects\UTM\PAD\Lab1\Receiver\BussinessLayer\bin\Debug\netcoreapp3.1\BussinessLayer.pdb
+D:\Visual Projects\UTM\PAD\Lab1\Receiver\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.csprojAssemblyReference.cache
+D:\Visual Projects\UTM\PAD\Lab1\Receiver\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.AssemblyInfoInputs.cache
+D:\Visual Projects\UTM\PAD\Lab1\Receiver\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.AssemblyInfo.cs
+D:\Visual Projects\UTM\PAD\Lab1\Receiver\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.csproj.CoreCompileInputs.cache
+D:\Visual Projects\UTM\PAD\Lab1\Receiver\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.dll
+D:\Visual Projects\UTM\PAD\Lab1\Receiver\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.pdb

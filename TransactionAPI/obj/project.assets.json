@@ -23,19 +23,6 @@
         "runtime": {
           "bin/placeholder/BussinessLayer.dll": {}
         }
-      },
-      "Receiver/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "BussinessLayer": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Receiver.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Receiver.dll": {}
-        }
       }
     }
   },
@@ -75,17 +62,11 @@
       "type": "project",
       "path": "../BussinessLayer/BussinessLayer.csproj",
       "msbuildProject": "../BussinessLayer/BussinessLayer.csproj"
-    },
-    "Receiver/1.0.0": {
-      "type": "project",
-      "path": "../Receiver/Receiver.csproj",
-      "msbuildProject": "../Receiver/Receiver.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "BussinessLayer >= 1.0.0",
-      "Receiver >= 1.0.0"
+      "BussinessLayer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -95,11 +76,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\TransactionAPI\\TransactionAPI.csproj",
+      "projectUniqueName": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\TransactionAPI\\TransactionAPI.csproj",
       "projectName": "TransactionAPI",
-      "projectPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\TransactionAPI\\TransactionAPI.csproj",
+      "projectPath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\TransactionAPI\\TransactionAPI.csproj",
       "packagesPath": "C:\\Users\\Artyrik\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\TransactionAPI\\obj\\",
+      "outputPath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\TransactionAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -118,11 +99,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj": {
-              "projectPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj"
-            },
-            "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\Receiver\\Receiver.csproj": {
-              "projectPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\Receiver\\Receiver.csproj"
+            "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj": {
+              "projectPath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj"
             }
           }
         }

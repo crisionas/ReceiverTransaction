@@ -58,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj",
-      "projectName": "BussinessLayer",
-      "projectPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj",
+      "projectUniqueName": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\Domain.csproj",
+      "projectName": "Domain",
+      "projectPath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\Domain.csproj",
       "packagesPath": "C:\\Users\\Artyrik\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\obj\\",
+      "outputPath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

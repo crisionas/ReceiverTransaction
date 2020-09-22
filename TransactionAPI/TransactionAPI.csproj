@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BussinessLayer\BussinessLayer.csproj" />
-    <ProjectReference Include="..\Receiver\Receiver.csproj" />
   </ItemGroup>
 
 </Project>

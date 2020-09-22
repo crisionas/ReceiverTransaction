@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj": {}
+    "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj": {}
   },
   "projects": {
-    "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj": {
+    "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj",
+        "projectUniqueName": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj",
         "projectName": "BussinessLayer",
-        "projectPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj",
+        "projectPath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj",
         "packagesPath": "C:\\Users\\Artyrik\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\obj\\",
+        "outputPath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

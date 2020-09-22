@@ -10,6 +10,7 @@ namespace TransactionAPI
 {
     public class ReceiverSocket
     {
+        protected const int SIZE_RECEIVE_BUFFER = 1024;
         private Socket _socket;
         public ReceiverSocket()
         {
@@ -25,21 +26,22 @@ namespace TransactionAPI
         {
             if (_socket.Connected)
             {
-                Console.WriteLine("Receiver is connected to Queue Server");
+                Console.WriteLine("Receiver is connected to Queue Server...");
                 StartReceive();
             }
             else
             {
-                Console.WriteLine("Error! Can't connect to Queue Server.");
+                Console.WriteLine("Error! Can't connect to Queue Server... " + _socket.Connected);
 
             }
         }
 
         private void StartReceive()
         {
+            byte[] ReceiveBuffer = new byte[SIZE_RECEIVE_BUFFER];
             TransactionProtocol transaction = new TransactionProtocol();
             transaction.Socket = _socket;
-            _socket.BeginReceive(transaction.Buffer, 0, transaction.Buffer.Length, SocketFlags.None, ReceiveCallBack, transaction);
+            _socket.BeginReceive(ReceiveBuffer, 0, transaction.Buffer.Length, SocketFlags.None, ReceiveCallBack, transaction);
         }
 
         private void ReceiveCallBack(IAsyncResult ar)

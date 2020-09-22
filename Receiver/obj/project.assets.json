@@ -11,17 +11,17 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "BussinessLayer/1.0.0": {
+      "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
-          "bin/placeholder/BussinessLayer.dll": {}
+          "bin/placeholder/Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BussinessLayer.dll": {}
+          "bin/placeholder/Domain.dll": {}
         }
       }
     }
@@ -58,15 +58,15 @@
         "packageIcon.png"
       ]
     },
-    "BussinessLayer/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
-      "path": "../BussinessLayer/BussinessLayer.csproj",
-      "msbuildProject": "../BussinessLayer/BussinessLayer.csproj"
+      "path": "../BussinessLayer/Domain.csproj",
+      "msbuildProject": "../BussinessLayer/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "BussinessLayer >= 1.0.0"
+      "Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -76,11 +76,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\Receiver\\Receiver.csproj",
+      "projectUniqueName": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\Receiver\\Receiver.csproj",
       "projectName": "Receiver",
-      "projectPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\Receiver\\Receiver.csproj",
+      "projectPath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\Receiver\\Receiver.csproj",
       "packagesPath": "C:\\Users\\Artyrik\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\Receiver\\obj\\",
+      "outputPath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\Receiver\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -99,8 +99,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj": {
-              "projectPath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\BussinessLayer\\BussinessLayer.csproj"
+            "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\Domain.csproj": {
+              "projectPath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\BussinessLayer\\Domain.csproj"
             }
           }
         }

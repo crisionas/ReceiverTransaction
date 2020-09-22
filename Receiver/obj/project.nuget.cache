@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jaPOo41mptdLcE6fUHIUpFOZC7alxXnZEorSIGzDxBy6D1lAcYyMcRqm8I6aDej/1QTO/lI3dl0sKt59kPlaQw==",
+  "dgSpecHash": "cqPEn/+CQiWmh1CN0CLc+rLve60FDU1Z3t3GUpUws63A5dtfpdhRxm0F3tkhiU04msUGnIRht7VI6x9BQmFPMg==",
   "success": true,
-  "projectFilePath": "D:\\Visual Projects\\UTM\\SI\\Lab1\\Receiver\\Receiver\\Receiver.csproj",
+  "projectFilePath": "D:\\Visual Projects\\UTM\\PAD\\Lab1\\Receiver\\Receiver\\Receiver.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Artyrik\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

@@ -25,6 +25,11 @@ namespace BussinessLayer
                 {
                     streamWriter.WriteLine(transaction);
                 }
+                Console.WriteLine(transaction.Request_id);
+                Console.WriteLine(transaction.Sender_id);
+                Console.WriteLine(transaction.Timestamp);
+                Console.WriteLine(transaction.Transaction);
+                Console.WriteLine(transaction.Type_message);
             }
             catch (Exception e)
             {

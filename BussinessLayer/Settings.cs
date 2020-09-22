@@ -1,12 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using System.Text;
 
 namespace BussinessLayer
 {
     public class Settings
     {
-        public static string ipAddress = "127.0.0.1";
-        public static int port = 9000;
+        public const int buff_size = 1024;
+
+        public Socket Socket { get; set; }
+        public string IpAdress { get; set; }
+        public byte[] Buffer { get; set; }
+        public DateTime TimeStamp { get; set; }
+
+        public Settings()
+        {
+            Buffer = new byte[buff_size];
+        }
+
     }
 }

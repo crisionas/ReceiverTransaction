@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BussinessLayer\BussinessLayer.csproj" />
+    <ProjectReference Include="..\BussinessLayer\Domain.csproj" />
   </ItemGroup>
 
 </Project>

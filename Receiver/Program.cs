@@ -1,4 +1,5 @@
 ﻿using BussinessLayer;
+using Domain;
 using Receiver;
 using System;
 
@@ -8,12 +9,9 @@ namespace ReceiverSocket
     {
         static void Main(string[] args)
         {
-            string ip="1";
-            int port=900;
-            Console.WriteLine("Receiver is ON!");
+            
             var socket = new SocketReceiver();
-            socket.Connect(ip, port);
-            Console.WriteLine("Press any key...");
+            socket.Connect(Common.ip, Common.port);
             Console.ReadLine();
 
         }

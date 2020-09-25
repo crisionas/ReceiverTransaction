@@ -10,32 +10,43 @@ namespace BussinessLayer
 {
     public class PayloadHandler
     {
-        public static void Handle(byte[] transactionbytes)
+        public static void Handle(byte[] transactionbytes,Settings settings)
         {
-            FileStream fileStream;
-            StreamWriter writer;
 
             var transactionstring = Encoding.UTF8.GetString(transactionbytes);
-            var transaction = JsonConvert.DeserializeObject<TransactionProtocol>(transactionstring);
+            var data = JsonConvert.DeserializeObject<TransactionProtocol>(transactionstring);
+            var transaction = JsonConvert.DeserializeObject<TransactionData>(data.Transaction);
+            //if (string.IsNullOrWhiteSpace(data.Request_id) || string.IsNullOrWhiteSpace(data.Sender_id)
+            //    || string.IsNullOrWhiteSpace(data.Transaction))
+            //{
+            //    data.Type_message = Enums.MessageType.error;
+            //    data.Transaction = null;
+            //    data.Message = $"Error! Transaction from {data.Sender_id} to {data.Request_id} at {data.Timestamp} was unsuccessful.";
+            //    var byte_message = ConvertToBytes(data);
+            //    settings.Socket.Send(byte_message);
+            //}
+            //else
+            //{
+                //data.Type_message = Enums.MessageType.response;
+                //data.Transaction = null;
+                //data.Message = $"Successful! Transaction from {data.Sender_id} to {data.Request_id} at {data.Timestamp} was successful.";
+                //data.Timestamp = DateTime.Now;
+                //var byte_message = ConvertToBytes(data);
 
-            try
-            {
-                fileStream = new FileStream("./Transfers.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
-                using (StreamWriter streamWriter = new StreamWriter(fileStream))
-                {
-                    streamWriter.WriteLine(transaction);
-                }
-                Console.WriteLine(transaction.Request_id);
-                Console.WriteLine(transaction.Sender_id);
-                Console.WriteLine(transaction.Timestamp);
-                Console.WriteLine(transaction.Transaction);
-                Console.WriteLine(transaction.Type_message);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine($"{e.Message}");
-            }
-            Console.WriteLine("Transaction " + transaction.Request_id + " was saved.");
+                Console.WriteLine("\n\n" + data.Sender_id + " add to " + data.Request_id + " at " + data.Timestamp);
+
+                Console.WriteLine("Owner: " + transaction.Owner_card_id + "\nReceiver: " + transaction.Recipient_card_id + "\nTransaction: " + transaction.transactionType
+                    + "\nCcy: " + transaction.Ccy + "\nSum: " + transaction.Transaction_summ);
+                //settings.Socket.Send(byte_message);
+           // }    
         }
+
+        //private static byte[] ConvertToBytes(TransactionProtocol message)
+        //{
+        //    var transact_format = JsonConvert.SerializeObject(message);
+        //    var byte_array = UTF8Encoding.UTF8.GetBytes(transact_format);
+        //    return byte_array;
+        //}
+
     }
 }

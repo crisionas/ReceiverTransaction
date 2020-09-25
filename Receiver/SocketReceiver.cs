@@ -1,5 +1,7 @@
 ﻿using BussinessLayer;
 using BussinessLayer.BussinessModels;
+using BussinessLayer.Enums;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -26,12 +28,34 @@ namespace Receiver
             if (_socket.Connected)
             {
                 Console.WriteLine("Receiver is connected to Queue Server...");
+                Subscribe();
                 StartReceive();
             }
             else
             {
                 Console.WriteLine("Error! Can't connect to Queue Server...");
 
+            }
+        }
+        private void Subscribe()
+        {
+            TransactionProtocol transaction = new TransactionProtocol();
+            transaction.Type_message = MessageType.give;
+
+            var data = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(transaction));
+            Send(data);
+        }
+
+
+        private void Send(byte[] data)
+        {
+            try
+            {
+                _socket.Send(data);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine($"Erorr! Couldn't send data {e.Message}");
             }
         }
 
@@ -50,14 +74,13 @@ namespace Receiver
             {
                 SocketError response;
                 int buffsize = _socket.EndReceive(ar, out response);
-                byte[] payloadbytes = new byte[buffsize];
-                Array.Copy(settings.Buffer, payloadbytes, payloadbytes.Length);
+                if (response == SocketError.Success)
+                {
+                    byte[] payloadbytes = new byte[buffsize];
+                    Array.Copy(settings.Buffer, payloadbytes, payloadbytes.Length);
 
-                ReceiverManager receiver = new ReceiverManager();
-                receiver.GetRoute().Requests(settings);
-
-                // PayloadHandler.Handle(payloadbytes);
-
+                    PayloadHandler.Handle(payloadbytes,settings);
+                }
             }
             catch (Exception e)
             {

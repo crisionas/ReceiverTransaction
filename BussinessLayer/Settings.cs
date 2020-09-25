@@ -7,7 +7,7 @@ namespace BussinessLayer
 {
     public class Settings
     {
-        public const int buff_size = 1024;
+        public const int buff_size = 4024;
 
         public Socket Socket { get; set; }
         public string IpAdress { get; set; }
